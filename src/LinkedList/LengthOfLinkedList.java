@@ -42,5 +42,4 @@ static class Node{
         ll.insertHead(23);
         System.out.println(Length());
     }
-
 }
