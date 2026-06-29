@@ -35,7 +35,7 @@ public class ReverseLinkedList {
     }
 
     public static void main(String[] args) {
-        // Creating linked list 1 -> 2 -> 3 -> null
+
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
@@ -43,7 +43,7 @@ public class ReverseLinkedList {
         ReverseLinkedList sol = new ReverseLinkedList();
         head = sol.reverseList(head);
 
-        // Printing reversed list
+
         while (head != null) {
             System.out.print(head.val + " ");
             head = head.next;
