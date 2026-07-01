@@ -55,7 +55,7 @@ public class RemoveNthNode {
         ListNode temp = head;
 
         while (temp != null) {
-            System.out.print(temp.data + " -> ");
+            System.out.print(temp.data);
 
             if (temp.next != null) {
                 System.out.print(" -> ");

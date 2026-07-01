@@ -30,7 +30,7 @@ public class RemoveDuplicatesFromSortedList {
         ListNode temp = head;
 
         while (temp != null) {
-            System.out.print(temp.val + " -> ");
+            System.out.print(temp.val);
 
             if (temp.next != null) {
                 System.out.print(" -> ");
@@ -44,7 +44,7 @@ public class RemoveDuplicatesFromSortedList {
 
     public static void main(String[] args) {
         RemoveDuplicatesFromSortedList del = new RemoveDuplicatesFromSortedList();
-        ListNode first = new ListNode(5);
+        ListNode first = new ListNode(1);
         ListNode second = new ListNode(1);
         ListNode third = new ListNode(2);
         ListNode fourth = new ListNode(3);
@@ -64,5 +64,13 @@ public class RemoveDuplicatesFromSortedList {
 
         System.out.println("LIST AFTER DELETION OF DUPLICATE NODES");
         del.deleteDuplicates(head);
+        ListNode temp = head;
+        while(temp!=null){
+            System.out.print(temp.val);
+            if (temp.next != null) {
+                System.out.print(" -> ");
+            }
+            temp = temp.next;
+        }
     }
 }
