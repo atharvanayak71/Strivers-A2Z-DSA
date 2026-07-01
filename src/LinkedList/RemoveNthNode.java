@@ -51,12 +51,11 @@ public class RemoveNthNode {
         return size;
     }
 
-    // Helper method to print the linked list
     public void printList() {
         ListNode temp = head;
 
         while (temp != null) {
-            System.out.print(temp.data);
+            System.out.print(temp.data + " -> ");
 
             if (temp.next != null) {
                 System.out.print(" -> ");
